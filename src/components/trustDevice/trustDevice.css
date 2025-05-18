@@ -1,0 +1,37 @@
+.trustDevice {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: calc(100vh - 80px);
+  background-color: rgb(218, 241, 241);
+}
+
+.container2 li {
+  margin: 10px 0px;
+}
+
+.container2 ul li:first-child {
+  margin-top: 0px;
+}
+.container2 ul li:last-child {
+  margin-bottom: 30px;
+}
+
+.container2 h5 {
+  margin-top: 30px;
+}
+
+.container2 h5:first-child {
+  margin-top: 0px;
+}
+
+.container2 a {
+  text-decoration: none;
+  color: black;
+}
+
+@media screen and (max-width: 1030px) {
+  .trustDevice {
+    height: calc(100vh - 110px);
+  }
+}

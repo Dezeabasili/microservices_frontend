@@ -1,0 +1,68 @@
+.itemContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin: 10px;
+}
+
+.picture {
+  flex: 3;
+}
+
+.picture > img {
+  object-fit: cover;
+}
+
+.smallerPicture {
+  display: none;
+}
+
+.smallerPictureAlt {
+  display: block;    
+  margin: 1% 0px;
+}
+
+.pictureAlt {
+  display: none;
+}
+
+.SearchItem_Hotel_Name {
+  text-transform: capitalize;
+}
+
+.itemDecs {
+  flex: 4;
+}
+
+.priceAndRating {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.itemRating {
+  display: flex;
+  justify-content: space-between;
+}
+
+.itemPrice {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.itemContainer button {
+  margin: 5px 0px;
+}
+
+@media screen and (max-width: 800px) {
+  .smallerPicture {
+    display: block;    
+    margin: 1% 0px;
+  }
+
+  .picture {
+    display: none;
+  }
+}

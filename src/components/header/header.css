@@ -1,0 +1,193 @@
+.header {
+  
+  display: flex;
+  justify-content: center;
+  color: white;
+  width: 100%;
+}
+
+.headerContainer {
+  width: 100%;
+  max-width: 1024px;
+  text-align: center;
+}
+
+.headerTitleDiv {
+  background-color: blue;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+
+.headerSearch {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  height: fit-content;
+  color: black;
+  border-radius: 5px;
+  position: relative;
+  width: 100%;
+  max-width: 1024px;
+  min-width: 230px;
+}
+
+.headerSearchItem {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex: 22%;
+  height: 70px;
+  border-radius: 5px;
+  margin: 2px;
+  padding: 3px;
+}
+
+
+.hideRoomOptionsFunc {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.headerSearchButton {
+  justify-content: center;
+  background-color: blue;
+  border: none;
+  color: white;
+  font-weight: bold;
+  height: 30px;
+  width: 100%;
+}
+
+.headerSearchItemTopDiv {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 30px;
+}
+
+.headerSearchItemTopDiv .headerSearchIcon {
+  margin-right: 10px;
+}
+
+.headerSearchInput {
+  border: 2px solid black;
+  outline: none;
+  width: 100%;
+  height: 30px;
+  padding-left: 5px;
+}
+
+.headerSearchDatePicker {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 1;  
+}
+
+.headerSearchOptions {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 1;
+  background-color: white;
+  border: 1px solid grey;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.roomOptions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+  gap: 20px;
+}
+
+.roomOptionsDiv {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.roomOptionsDivSpan {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+}
+
+.roomOptionsDivMinus:disabled,
+.roomOptionsDivPlus:disabled {
+  cursor: not-allowed;
+}
+
+.hideDateClass {
+  display: none;
+}
+
+.red-border {
+  width: 100%;
+  height: 30px;
+  border: 2px solid black;
+  outline: none;
+  padding-left: 5px;
+}
+
+.datepicker {
+  width: 100%;
+}
+
+.selectDestination {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(127, 255, 212, 0.5);
+  z-index: 1;
+}
+
+.selectDestinationDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  background-color: whitesmoke;
+  color: black;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 1030px) {
+  
+}
+
+@media screen and (max-width: 775px) {
+  .headerSearchItem {
+    flex: 44%;
+  }
+}
+@media screen and (max-width: 485px) {
+  .headerSearchItem {
+    flex: 100%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .headerSearchDatePicker {
+    right: -25px;
+  }
+
+  .hideEmptyDiv {
+    display: none;
+  }
+}
+

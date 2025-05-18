@@ -1,0 +1,128 @@
+.messages {
+    flex: 3;
+    border-right: 1px solid grey;
+    /* border: 1px solid grey; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 5px;
+    width: 100%;
+    max-width: 540px;
+
+}
+
+.newMessageForm {
+    display: flex;
+    gap: 5px;
+    width: 100%;
+}
+
+.notificationCount {
+    cursor: pointer;
+}
+
+.notificationCount span {
+    margin: 10px;
+    padding: 2px;
+    border: 1px solid red;
+    border-radius: 50%;
+    background-color: red;
+    color: aliceblue;
+}
+
+.nameAndNotification {
+    display: flex;
+    justify-content: space-between;
+}
+
+.newMessageInput {
+    flex: 5;
+
+}
+
+.newMessageButton {
+    flex: 1;
+}
+
+.myMessage {
+    width: 70%;
+    align-self: flex-start;
+    background-color: rgba(169, 169, 169, 0.233);  
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.otherMessages {
+    width: 70%;
+    align-self: flex-end;
+    background-color: rgba(245, 245, 220, 0.637);
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.messageContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.don1 {
+    flex-grow: 1;
+    max-height: 92%;
+
+}
+
+.messageTime {
+    text-align: right;
+    color: green;
+    font-size: x-small;
+}
+
+.openChatMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.226);
+  }
+
+  .modalSubContainer {
+    position: relative;
+    width: 250px;
+    height: 100vh;
+    background-color: rgb(218, 241, 241);
+    padding: 20px;
+  }
+
+  .cancelModalSubContainer {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+
+  .chatMenuOptions {
+    height: 250px;
+    width: 200px;
+    background-color: white;
+    position: relative;
+    top: 110px;
+    padding: 20px;
+  }
+
+  .chatArrow {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+ 
+  }
+
+  .chatMenuItem, .chatArrowPointer {
+    cursor: pointer;
+  }

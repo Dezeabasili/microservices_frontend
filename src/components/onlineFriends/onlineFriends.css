@@ -1,0 +1,24 @@
+.onlineFriends {
+    flex: 1;
+    padding: 0 10px;
+    max-height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    width: 100%;
+    min-width: 150px;
+    /* border: 1px solid grey; */
+}
+
+.onlinediv {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.onlinedivColor {
+    width: 10px;
+    height: 10px;
+    background-color: green;
+    border-radius: 50%;
+}

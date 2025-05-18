@@ -1,0 +1,48 @@
+.citiesContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 10px;
+}
+
+.cities {
+  width: 33%;
+  position: relative;
+  color: black;
+  overflow: hidden;
+}
+
+.cityPicture {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.cityHeader {
+  text-transform: capitalize;
+}
+
+.changeArrow {
+  margin: 100px 0px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+
+@media screen and (max-width: 485px) {
+  .cities {
+    width: 49%;
+    
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .cities {
+    width: 100%;
+    
+  }
+}
+

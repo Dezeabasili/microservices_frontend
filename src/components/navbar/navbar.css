@@ -1,0 +1,203 @@
+.navbar {
+  width: 100%;
+  height: 80px;
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  position: relative;
+}
+
+.navContainer {
+  width: 100%;
+  max-width: 1024px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navContainer > a {
+  text-decoration: none;
+  color: inherit;
+  margin: 2%;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.navContainerimgDiv {
+  margin-right: 4%;
+  padding: 10px;
+}
+
+.navContainer img {
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50px;
+}
+
+.menu-bar {
+  background-color: inherit;
+  text-align: center;
+  /* display: none; */
+}
+
+.menu-bar a {
+  white-space: nowrap;
+}
+
+.menu-bar ul {
+  display: inline-flex;
+  list-style: none;
+  justify-content: space-between;
+  color: black
+}
+
+.menu-bar ul li {
+  width: 120px;
+  margin: 3%;
+  padding: 3%;
+}
+
+.menu-bar ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.active,
+.menu-bar ul li:hover {
+  background-color: grey;
+}
+
+.sub-menu-1 {
+  display: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 {
+  display: block;
+  position: absolute;
+  background-color: blue;
+  margin-top: 5px;
+  margin-left: -15px;
+  z-index: 1;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul {
+  display: block;
+  margin: 10px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li {
+  width: 150px;
+  padding: 10px;
+  border-bottom: 1px dotted rgb(10, 243, 22);
+  background: transparent;
+  text-align: left;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child {
+  border-bottom: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover {
+  color: rgb(162, 236, 202);
+}
+
+.sub-menu-2 {
+  display: none;
+}
+
+.hover-me:hover .sub-menu-2 {
+  position: absolute;
+  display: block;
+  margin-top: -40px;
+  margin-left: 140px;
+  background-color: blue;
+}
+
+
+.navbarMainMenu {
+  display: none;
+}
+
+.navbarMainMenuList {
+  width: 200px;
+  overflow-x: hidden;
+}
+
+.navbarMainMenuList li {
+  margin: 10px 0px;
+}
+
+.navbarMainMenuList h5 {
+  margin-top: 30px;
+  color: black;
+}
+
+.navbarMainMenuList ul li h5:first-child {
+  margin-top: 0px;
+}
+
+.navbarMainMenu a {
+  text-decoration: none;
+  color: black;
+}
+
+@media screen and (max-width: 1030px) {
+  .navbar {
+    height: 110px;
+  }
+
+  .navbarMainMenu {
+    display: block;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    margin-left: 2%;
+    height: 400px;
+  }
+
+  .navbarMainMenu ul {
+    text-decoration: none;
+    list-style: none;
+    margin-left: 2%;
+  }
+
+  .navbarMainMenuList {
+    background-color: rgb(199, 214, 214);
+    height: 400px;
+    overflow-y: scroll;
+    width: 200px;
+    overflow-x: hidden;
+  }
+
+  .navbarMainMenuList p {
+    font-weight: bold;
+    color: black;
+  }
+
+  .navbarMainMenuList a:hover {
+    background-color: rgb(167, 180, 180);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .menu-bar {
+    position: absolute;
+    right: 2%;
+    bottom: -10px;
+  }
+}
+
+@media screen and (max-width: 571px) {
+  .menu-bar {
+    display: none;
+  }
+}

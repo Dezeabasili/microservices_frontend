@@ -1,0 +1,71 @@
+.reserveRoom {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 255, 0.377);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.reserveRoomCont {
+  background-color: white;
+  position: relative;
+  padding: 20px;
+}
+
+.reserveRoomMap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.reserveRoomClose {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.roomCont {
+  display: flex;
+  justify-content: space-between;
+}
+
+.roomNumbers {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.room {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.room input {
+  margin-left: 5px;
+  margin-top: 4px;
+}
+
+.reserveRoom button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 5px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.reserveRoom button:disabled {
+  cursor: not-allowed;
+  background-color: rgba(0, 0, 255, 0.301);
+}
+
+.ReserveRoom_RoomStyleTitle {
+  text-transform: capitalize;
+}

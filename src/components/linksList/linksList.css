@@ -1,0 +1,16 @@
+.linksList {
+    width: 100%;
+    background-color: blue;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+ .linksListContainer {
+    width: 100%;
+    max-width: 1024px;
+ }
+
+ .linksListContainer a {
+    color: white;
+ }

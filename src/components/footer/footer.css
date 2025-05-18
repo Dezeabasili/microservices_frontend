@@ -1,0 +1,26 @@
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footerContainer {
+    width: 100%;
+    /* max-width: 1024px; */
+    display: flex;
+    flex-direction: column;
+}
+
+.footerListsCon {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerList {
+    display: flex;
+    flex-direction: column;
+}
+
+.footerList a {
+    text-decoration: none;
+}
